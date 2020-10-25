@@ -71,7 +71,7 @@ section {
 .section-long {
     grid-column: 1 / 3;
     grid-row: 3;
-    width: 50%;
+    width: calc(100vw - 25%);
     justify-self: center;
 
 }
@@ -105,10 +105,10 @@ section {
 }
 
 .form-control {
-    width: 92px;
-    height: calc(1.5em + .75rem + 2px);
+    width: calc(60px + 50 * ((100vw - 320px) / (1920 - 320)));
+    height: calc(20px + 16 * ((100vw - 320px) / (1920 - 320)));
     padding: 4px 4px;
-    font-size: 1rem;
+    font-size: calc(12px + 6 * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
@@ -116,7 +116,7 @@ section {
     background-clip: padding-box;
     border: 2px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control:focus {
@@ -124,7 +124,7 @@ section {
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
 
 .justify-self-center {
@@ -168,14 +168,15 @@ section {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
 
-.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active {
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active {
     color: #fff;
     background-color: #117a8b;
     border-color: #10707f;
@@ -185,7 +186,7 @@ section {
     color: #fff;
     background-color: #138496;
     border-color: #117a8b;
-    box-shadow: 0 0 0 0.2rem rgba(58,176,195,.5);
+    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, .5);
     outline: 0;
 }
 
@@ -203,4 +204,39 @@ section {
     text-align: left;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .main-wrapper {
+        margin: 0 16px;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .section-big {
+        grid-column: unset;
+        grid-row: unset;
+        justify-content: space-evenly;
+    }
+
+    .section-long {
+        grid-column: unset;
+        grid-row: unset;
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    font-size: calc(16px + 10 * ((100vw - 320px) / (1920 - 320)));
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h1::after {
+    content: '';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: translateX(150%);
+    background: rgb(255, 255, 255);
+}
+
+h5 {
+    font-size: calc(12px + 10 * ((100vw - 320px) / (1920 - 320)));
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.label-font {
+    font-size: calc(8px + 10 * ((100vw - 320px) / (1920 - 320)));
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: hsl(0, 0%, 95%);
+}
+
+.main-wrapper {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 16px;
+    background: hsl(0, 0%, 98%);
+}
+
+.section-big {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    justify-content: space-evenly;
+}
+
+.section-long {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    width: 50%;
+    justify-self: center;
+
+}
+
+.table {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-left: 4px;
+    transition: .3s cubic-bezier(0.4, 0, 1, 1);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.row__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.row:nth-child(1) {
+    margin-top: 0;
+}
+
+.row:hover {
+    background: hsl(0, 0%, 85%);
+}
+
+.form-control {
+    width: 92px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 4px 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.row-start {
+    margin-bottom: 16px;
+}
+
+.p-title {
+    font-size: calc(12px + 6 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 700;
+}
+
+.p-text {
+    font-size: calc(8px + 6 * ((100vw - 320px) / (1920 - 320)));
+    text-align: center;
+    font-weight: 700;
+}
+
+.result-block {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.btn {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    border: 1px solid transparent;
+    padding: 8px 32px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #10707f;
+}
+
+.btn-info:focus {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    box-shadow: 0 0 0 0.2rem rgba(58,176,195,.5);
+    outline: 0;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-text {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+

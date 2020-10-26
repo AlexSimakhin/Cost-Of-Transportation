@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Себестоимость перевозок</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <h1>Себестоимость перевозок</h1>
+
+        <div class="container">
+            <section>
+                <h5>Общие исходные данные</h5>
+
+                <div class="table">
+
+                    <div class="row">
+                        <label for="a1" class="label-font">Количество машин в парке</label>
+                        <input id="a1" type="number" min="0" name="a" class="form-control" placeholder="Количество машин в парке" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="a2" class="label-font">Количество рабочих суток в месяц</label>
+                        <input id="a2" type="number" min="0" name="a" class="form-control" placeholder="Количество рабочих суток в месяц" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="a3" class="label-font">Пробег одной машины в месяц. км.</label>
+                        <input id="a3" type="number" min="0" name="a" class="form-control" placeholder="Пробег одной машины в месяц. км." value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="a4" class="label-font">Расход топлива л. на 100 км.</label>
+                        <input id="a4" type="number" min="0" name="a" class="form-control" placeholder="Расход топлива л. на 100 км." value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="a5" class="label-font">Стоимость топлива грн. за литр</label>
+                        <input id="a5" type="number" min="0" name="a" class="form-control" placeholder="Стоимость топлива грн. за литр" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="a6" class="label-font">Холостые пробеги %</label>
+                        <input id="a6" type="number" min="0" name="a" class="form-control" placeholder="Холостые пробеги %" value="0">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section-big">
+                <h5>Расходы на содержание и эксплуатацию 1 авто</h5>
+
+                <div class="table">
+
+                    <div class="row">
+                        <label for="b1" class="label-font">Зарплата водителю ежемесячная</label>
+                        <input id="b1" type="number" min="0" name="b" class="form-control" placeholder="Зарплата водителю ежемесячная" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b2" class="label-font">З/п водителю по километражу грн. за 1 км</label>
+                        <input id="b2" type="number" min="0" name="b" class="form-control" placeholder="З/п водителю по километражу грн. за 1 км" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b3" class="label-font">Командировочные водителю за 1 сутки</label>
+                        <input id="b3" type="number" min="0" name="b" class="form-control" placeholder="Командировочные водителю за 1 сутки" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b4" class="label-font">Налоги грн./месяц</label>
+                        <input id="b4" type="number" min="0" name="b" class="form-control" placeholder="Налоги грн./месяц" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b5" class="label-font">Техосмотр 1 машина + прицеп грн./год</label>
+                        <input id="b5" type="number" min="0" name="b" class="form-control" placeholder="Техосмотр 1 машина + прицеп грн./год" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b6" class="label-font">Автогражданка 1 машина + прицеп грн./год</label>
+                        <input id="b6" type="number" min="0" name="b" class="form-control" placeholder="Автогражданка 1 машина + прицеп грн./год" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b7" class="label-font">Лицензия + карточки грн.(1 раз в 5 лет)</label>
+                        <input id="b7" type="number" min="0" name="b" class="form-control" placeholder="Лицензия + карточки грн.(1 раз в 5 лет)" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b8" class="label-font">Налог на загрязнения окруж среды грн./мес</label>
+                        <input id="b8" type="number" min="0" name="b" class="form-control" placeholder="Налог на загрязнения окруж среды грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b9" class="label-font">СМР страхование грн./год</label>
+                        <input id="b9" type="number" min="0" name="b" class="form-control" placeholder="СМР страхование грн./год" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b10" class="label-font">Вулканизация грн./мес</label>
+                        <input id="b10" type="number" min="0" name="b" class="form-control" placeholder="Вулканизация грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b11" class="label-font">Мойка машины грн./мес</label>
+                        <input id="b11" type="number" min="0" name="b" class="form-control" placeholder="Мойка машины грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b12" class="label-font">Стоянки грн./мес</label>
+                        <input id="b12" type="number" min="0" name="b" class="form-control" placeholder="Стоянки грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b13" class="label-font">ГАИ грн./мес</label>
+                        <input id="b13" type="number" min="0" name="b" class="form-control" placeholder="ГАИ грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b14" class="label-font">Ремонты внеплановые грн./год</label>
+                        <input id="b14" type="number" min="0" name="b" class="form-control" placeholder="Ремонты внеплановые грн./год" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b15" class="label-font">Непредвиденные расходы грн./мес</label>
+                        <input id="b15" type="number" min="0" name="b" class="form-control" placeholder="Непредвиденные расходы грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="b16" class="label-font">Проценты по кредиту грн./мес (без тела кредита)</label>
+                        <input id="b16" type="number" min="0" name="b" class="form-control" placeholder="Проценты по кредиту грн./мес (без тела кредита)" value="0">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h5>Общие расходы (на весь автопарк)</h5>
+
+                <div class="table">
+
+                    <div class="row">
+                        <label for="c1" class="label-font">Зарплата бухгалтеру грн./мес</label>
+                        <input id="c1" type="number" min="0" name="c" class="form-control" placeholder="Зарплата бухгалтеру грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c2" class="label-font">Зарплата логиста грн./мес</label>
+                        <input id="c2" type="number" min="0" name="c" class="form-control" placeholder="Зарплата логиста грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c3" class="label-font">Оплата телефонной связи грн./мес</label>
+                        <input id="c3" type="number" min="0" name="c" class="form-control" placeholder="Оплата телефонной связи грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c4" class="label-font">Интернет</label>
+                        <input id="c4" type="number" min="0" name="c" class="form-control" placeholder="Интернет" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c5" class="label-font">Информационные услуги грн./мес</label>
+                        <input id="c5" type="number" min="0" name="c" class="form-control" placeholder="Информационные услуги грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c6" class="label-font">Реклама грн./мес</label>
+                        <input id="c6" type="number" min="0" name="c" class="form-control" placeholder="Реклама грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c7" class="label-font">Канцтовары, путевки, почта и пр. расходники грн./мес</label>
+                        <input id="c7" type="number" min="0" name="c" class="form-control" placeholder="Канцтовары, путевки, почта и пр. расходники грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c8" class="label-font">Транспортные расходы(бензин для легков. авто и пр.) грн./мес</label>
+                        <input id="c8" type="number" min="0" name="c" class="form-control" placeholder="Транспортные расходы(бензин для легков. авто и пр.) грн./мес" value="0">
+                    </div>
+
+                    <div class="row">
+                        <label for="c9" class="label-font">Аренда офиса грн./мес</label>
+                        <input id="c9" type="number" min="0" name="c" class="form-control" placeholder="Аренда офиса грн./мес" value="0">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section-long">
+                <h5>Затраты на ТО одного авто</h5>
+
+                <div class="table">
+
+                    <div class="row-start row__grid">
+                        <p class="p-title">Наименование работ</p>
+                        <p class="p-text">Периодичность ТО в км.</p>
+                        <p class="p-text">Кол-во</p>
+                        <p class="p-text">Стоимость ед.</p>
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d1-1" class="label-font">Масло(двигатель)</label>
+                        <input id="d1-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d1-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d1-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d2-1" class="label-font">Масло(коробка)</label>
+                        <input id="d2-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d2-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d2-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d3-1" class="label-font">Масло(задний мост)</label>
+                        <input id="d3-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d3-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d3-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d4-1" class="label-font">Антифриз концентрат</label>
+                        <input id="d4-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d4-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d4-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d5-1" class="label-font">Фильтр-влагоотделительный</label>
+                        <input id="d5-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d5-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d5-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d6-1" class="label-font">Колодки тормозные(тягач передняя ось)</label>
+                        <input id="d6-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d6-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d6-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d7-1" class="label-font">Колодки тормозные(тягач задняя ось)</label>
+                        <input id="d7-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d7-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d7-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d8-1" class="label-font">Колодки тормозные прицеп</label>
+                        <input id="d8-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d8-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d8-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+
+                    <div class="row row__grid">
+                        <label for="d9-1" class="label-font">Резина тягач + прицеп</label>
+                        <input id="d9-1" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d9-2" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                        <input id="d9-3" type="number" min="0" name="d" class="form-control justify-self-center" value="0">
+                    </div>
+                    
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="result-block">
+
+            <input id="btn-submit" class="btn btn-info btn-block" type="submit" value="Расчитать">
+
+            
+
+        </div>
+
+        <p class="p-text result-text"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
